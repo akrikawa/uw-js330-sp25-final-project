@@ -18,9 +18,11 @@ This is a first pass at the structure I think I'll need. I may end up making Ven
 - **Reservations:** _id, userId, eventId, venueSeatId
 
 ### Routes
-- **Users** /user _(REQ: Authentication and Authorization)_
+- **Authentication** /auth _(REQ: Authentication and Authorization)_
   - Signup for account (/signup POST) [MVP]
   - Login to account (/login POST) [MVP]
+  - Change password (/password POST)
+
 - **Events** /event _(REQ: At least 2 sets of CRUD routes)_
   - Create event (/ POST)[MVP]
   - Delete event (/:id DEL) [MVP]
@@ -44,6 +46,7 @@ This is a first pass at the structure I think I'll need. I may end up making Ven
   - Get user by id
   - Get user by text search
   - Login 
+  - Change user password
 - **Events**
   - Create event
   - Get all events
