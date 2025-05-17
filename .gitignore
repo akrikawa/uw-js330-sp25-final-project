@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 
+# Test coverage output
+coverage/
+
 # dotenv environment variable files
 .env
 .env.development.local
