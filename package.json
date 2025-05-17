@@ -11,11 +11,22 @@
     "url": "git+https://github.com/akrikawa/uw-js330-sp25-final-project.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Andy Krikawa",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --runInBand --collectCoverage",
+    "start": "nodemon index.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "preset": "@shelf/jest-mongodb",
+    "watchPathIgnorePatterns": [
+      "globalConfig"
+    ]
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
